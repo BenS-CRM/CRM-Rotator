@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  // URLs and corresponding weights
+  const urls = [
+    { url: "https://calendly.com/noman-ali-constellationdealer/targetcrm-session-4-automations?hide_event_type_details=1&hide_gdpr_banner=1", weight: 50 },  // 70% chance
+    { url: "https://calendly.com/ben-schmidt-2/targetcrm-session-4-automations-visibility?hide_event_type_details=1&hide_gdpr_banner=1", weight: 50 }     // 30% chance
+  ];
+
+  // Create a weighted list
+  const weightedList = [];
+  urls.forEach(item => {
+    for (let i = 0; i < item.weight; i++) {
+      weightedList.push(item.url);
+    }
+  });
+
+  // Pick a random URL based on weights
+  const randomIndex = Math.floor(Math.random() * weightedList.length);
+  const selectedUrl = weightedList[randomIndex];
+
+  // Redirect
+  window.location = selectedUrl;
+</script>
