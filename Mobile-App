@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Get Target CRM App</title>
+
+  <!-- Social preview (optional, helpful if the link is shared) -->
+  <meta property="og:title" content="Get the Target CRM App" />
+  <meta property="og:description" content="We’ll send you to the right app store for your device." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #0f172a;        /* slate-900 */
+      --panel: #111827;     /* gray-900 */
+      --text: #e5e7eb;      /* gray-200 */
+      --muted: #9ca3af;     /* gray-400 */
+      --accent: #22c55e;    /* green-500 */
+      --btn: #2563eb;       /* blue-600 */
+      --btn-hover: #1d4ed8; /* blue-700 */
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: linear-gradient(180deg, var(--bg), #020617);
+      color: var(--text);
+    }
+    .wrap {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 560px;
+      background: linear-gradient(180deg, var(--panel), #0b1220);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 1.6rem;
+      letter-spacing: 0.2px;
+    }
+    p {
+      margin: 8px 0 18px 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: var(--text);
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      padding: 8px 12px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+    .status .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 1.4s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(0.6); opacity: 0.4; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    @media (min-width: 520px) {
+      .buttons { grid-template-columns: 1fr 1fr; }
+    }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: white;
+      background: var(--btn);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: background .15s ease, transform .05s ease;
+      text-align: center;
+    }
+    a.btn:hover { background: var(--btn-hover); }
+    a.btn:active { transform: translateY(1px); }
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+    .small {
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin-top: 14px;
+    }
+    .badge {
+      margin-top: 16px;
+      display: flex; gap: 10px; flex-wrap: wrap;
+      opacity: 0.9;
+    }
+    .badge img {
+      height: 40px; width: auto;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" role="main" aria-labelledby="title">
+      <h1 id="title">Get the Target CRM App</h1>
+      <div class="status" id="statusRow" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span>
+        <span id="statusText">Detecting your device…</span>
+      </div>
+      <p>If you aren’t redirected automatically, choose your store below.</p>
+
+      <div class="buttons">
+        <a id="btn-ios" class="btn" href="https://apps.apple.com/us/app/target-crm/id153tore
+        </a>
+        <a id="btn-android" class="btn" href="https://play.google.com/storempaignid=web_share
+          🤖 Open in Google Play
+        </a>
+        <a id="btn-web" class="btn secondary" href="https://www.targetcrm.com" rel="noopener      <div class="badge" aria-hidden="true">
+        <!-- Optional official badges (replace with your hosted assets if desired) -->
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" altrc="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play badge   Tip: If the App Store / Play Store app doesn’t open, the buttons above will work in your browser.
+      </p>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      // Store URLs
+      const IOS_URL = "https://apps.apple.com/us/app/target-crm/id1536204342";
+      const ANDROID_URL = "https://play.google.com/store/apps/details?id=com.targetcrm.app&pcampaignid=web_share";
+      const WEB_FALLBACK = "https://www.targetcrm.com"; // change if you prefer a different fallback
+
+      const statusText = document.getElementById("statusText");
+      const statusRow  = document.getElementById("statusRow");
+      const btnIOS     = document.getElementById("btn-ios");
+      const btnAndroid = document.getElementById("btn-android");
+      const btnWeb     = document.getElementById("btn-web");
+
+      // Update visible button hrefs (keeps everything in one place)
+      btnIOS.href = IOS_URL;
+      btnAndroid.href = ANDROID_URL;
+      btnWeb.href = WEB_FALLBACK;
+
+      // Simple, robust user-agent detection for store routing.
+      // (Server-side detection is even more reliable, but this covers QR flows well.)
+      const ua = (navigator.userAgent || navigator.vendor || window.opera || "").toLowerCase();
+
+      const isAndroid = /android/.test(ua);
+      // iPadOS 13+ may report as Mac; include iPad|iPhone|iPod and iOS via touch test
+      const isIOS = /ipad|iphone|ipod/.test(ua) || (typeof navigator.standalone !== "undefined" && /macintosh/.test(ua) && "ontouchend" in document);
+
+      // If a "store" query param is present, respect it (e.g., ?store=ios or ?store=android) — handy for testing
+      const params = new URLSearchParams(window.location.search);
+      const forced = params.get("store");
+      const forceIOS = forced === "ios";
+      const forceAndroid = forced === "android";
+
+      function setStatus(message, isGood = true) {
+        statusText.textContent = message;
+        statusRow.style.background = isGood ? "rgba(34, 197, 94, 0.08)" : "rgba(251, 191, 36, 0.08)"; // green / amber
+        statusRow.style.borderColor = isGood ? "rgba(34, 197, 94, 0.25)" : "rgba(251, 191, 36, 0.35)";
+      }
+
+      function safeRedirect(url) {
+        // Use assign so back button returns to the previous page if they decide to go back
+        window.location.assign(url);
+      }
+
+      try {
+        let target = null;
+
+        if (forceIOS) {
+          target = IOS_URL;
+          setStatus("Opening Apple App Store…");
+        } else if (forceAndroid) {
+          target = ANDROID_URL;
+          setStatus("Opening Google Play…");
+        } else if (isAndroid) {
+          target = ANDROID_URL;
+          setStatus("Detected Android — opening Google Play…");
+        } else if (isIOS) {
+          target = IOS_URL;
+          setStatus("Detected iOS — opening App Store…");
+        } else {
+          // Desktop or unknown device
+          setStatus("Couldn’t detect a mobile OS — showing options.", false);
+        }
+
+        // Attempt redirect after a short delay so users see the status
+        if (target) {
+          setTimeout(() => safeRedirect(target), 450);
+        }
+      } catch (e) {
+        // If anything fails, don’t break the page—just show options
+        console.error("Redirect error:", e);
+        setStatus("Something went wrong — please choose your store below.", false);
+      }
+
+      // Optional: If nothing happened after a couple seconds, nudge the user
+      setTimeout(() => {
+        if (!document.hidden) {
+          setStatus("If you weren’t redirected, choose your store below.", false);
+        }
+      }, 2500);
+    })();
+  </script>
+</body>
+</html>
+``
