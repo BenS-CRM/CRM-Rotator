@@ -3,10 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Get Target CRM App</title>
-  <style>
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background:#0f172a; color:#e5e7eb; }
+  <meta name="viewport" content="width=device-width,0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background:#0f172a; color:#e5e7eb; }  <meta name="viewport" content="width=device-width,initial-scale=1" />
     .wrap { min-height: 100vh; display:grid; place-items:center; padding:24px; }
     .card { max-width: 520px; width:100%; background:#111827; border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:22px; }
     h1 { margin:0 0 8px; font-size:1.5rem; }
@@ -30,14 +27,18 @@
       <p>If you aren’t redirected automatically, choose your store below.</p>
 
       <div class="buttons">
-        <a id="btn-ios" class="btn" href="#" rel="tn-android Play</a>
-        <a id="btn-web" class="btn secondary" href="#" rel="noopener
+        <a id="btn-ios" class="btn" href="#"  Open in Google Play</a>
+        #🌐 Visit our website</a>
+      </div>
+    </main>
+  </div>
+
   <script>
     (function(){
       // Store URLs
       const IOS_URL = "https://apps.apple.com/us/app/target-crm/id1536204342";
       const ANDROID_URL = "https://play.google.com/store/apps/details?id=com.targetcrm.app&pcampaignid=web_share";
-      const WEB_FALLBACK = "https://www.targetcrm.com"; // change if you prefer
+      const WEB_FALLBACK = "https://www.targetcrm.com";
 
       // Hook up buttons
       const statusText = document.getElementById("statusText");
@@ -51,35 +52,27 @@
       // Device detection
       const ua = (navigator.userAgent || navigator.vendor || window.opera || "").toLowerCase();
       const isAndroid = /android/.test(ua);
-      const isIOS = /ipad|iphone|ipod/.test(ua) || ((/macintosh/.test(ua)) && "ontouchend" in document); // iPadOS on Safari
+      const isIOS = /ipad|iphone|ipod/.test(ua) || ((/macintosh/.test(ua)) && "ontouchend" in document);
 
-      // Optional manual test: ?store=ios or ?store=android
+      // Optional manual test ?store=ios/android
       const forced = new URLSearchParams(location.search).get("store");
       let target = null;
-      if (forced === "ios") {
-        target = IOS_URL; statusText.textContent = "Opening Apple App Store…";
-      } else if (forced === "android") {
-        target = ANDROID_URL; statusText.textContent = "Opening Google Play…";
-      } else if (isAndroid) {
-        target = ANDROID_URL; statusText.textContent = "Detected Android — opening Google Play…";
-      } else if (isIOS) {
-        target = IOS_URL; statusText.textContent = "Detected iOS — opening App Store…";
-      } else {
-        statusText.textContent = "Couldn’t detect a mobile OS — choose your store below.";
-      }
+
+      if (forced === "ios") target = IOS_URL;
+      else if (forced === "android") target = ANDROID_URL;
+      else if (isAndroid) target = ANDROID_URL;
+      else if (isIOS) target = IOS_URL;
 
       if (target) {
-        // Use assign so back button returns to previous page
-        setTimeout(() => { window.location.assign(target); }, 450);
+        statusText.textContent = "Redirecting...";
+        setTimeout(() => window.location.assign(target), 400);
+      } else {
+        statusText.textContent = "Choose your store below.";
       }
-
-      // If nothing happened after 2.5s, nudge the user
-      setTimeout(() => {
-        if (!document.hidden && !target) {
-          statusText.textContent = "If you weren’t redirected, choose your store below.";
-        }
-      }, 2500);
     })();
   </script>
 </body>
 </html>
+``
+  <title>Get Target CRM App</title>
+  <style>
