@@ -30,8 +30,8 @@
       <p>If you aren’t redirected automatically, choose your store below.</p>
 
       <div class="buttons">
-        <a id="btn-ios" class="btn" href="#" id="btn-android" class="btn" href="#" rel="noopenerass="btn secondary" href="#" rel=" </div>
-
+        <a id="btn-ios" class="btn" href="#" rel="tn-android Play</a>
+        <a id="btn-web" class="btn secondary" href="#" rel="noopener
   <script>
     (function(){
       // Store URLs
@@ -51,8 +51,7 @@
       // Device detection
       const ua = (navigator.userAgent || navigator.vendor || window.opera || "").toLowerCase();
       const isAndroid = /android/.test(ua);
-      const isIOS = /ipad|iphone|ipod/.test(ua) ||
-        ((/macintosh/.test(ua)) && "ontouchend" in document); // iPadOS on Safari
+      const isIOS = /ipad|iphone|ipod/.test(ua) || ((/macintosh/.test(ua)) && "ontouchend" in document); // iPadOS on Safari
 
       // Optional manual test: ?store=ios or ?store=android
       const forced = new URLSearchParams(location.search).get("store");
